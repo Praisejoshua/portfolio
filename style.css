@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: sans-serif;
+}
+
+html{
+scroll-behavior: smooth;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 40rem;
+}
+ul{
+    list-style: none;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    box-shadow: 2px 0px 5px black;
+    display: flex;
+
+}
+ ul li{
+    margin: 2rem;
+    padding: 5px;
+    margin-top: 12px;
+    display: inline-block;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+.active { 
+    background-color: aqua;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* .custom-ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0px 5px black;
+    display: flex;
+}
+
+.custom-li {
+    margin: 2rem;
+    padding: 5px;
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.custom-li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
+.custom-li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 40rem;
+} */
+
+
+
+section{
+    height: 100vh;
+    width: 100vw;
+    /* display: flex;  
+    align-items: center;
+    justify-content: center;  
+    text-align: center;  */
+    
+    
+
+}
+#home{
+    background-image: url("./images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#skill{
+    background-image: url("./images/skill.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+    /* padding: 20px;
+    text-align: center; */
+}
+
+#work{
+    background: linear-gradient(-45deg, white 30%, rgb(8, 0, 255));
+}
+
+html::-webkit-scrollbar{
+    width: 0.3rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 5rem;
+}
+.name{
+    font-size: 3rem; 
+    margin-left: 2rem;
+}
+.sub-name{
+    margin-right:10rem; 
+    font-size: 1.5rem;
+    color: rgba(39, 38, 38, 0.912);
+}
+
+
+.html-bar {
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+    overflow: hidden;
+}
+
+.html-bar-inner {
+    height: 20px;
+    width: 0;
+    background-color: rgb(213, 93, 7);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+.css-bar{
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+    overflow: hidden;
+}
+.css-bar-inner{
+    height: 20px;
+    width: 0;
+    background-color: rgba(0, 173, 236, 0.96);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.ui-ux-bar{
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+    overflow: hidden;
+    
+}
+.ui-ux-bar-inner{
+    height: 20px;
+    width: 0;
+    background-color: rgba(0, 173, 236, 0.96);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.flask-bar{
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+    overflow: hidden;
+    
+}
+.flask-bar-inner{
+    height: 20px;
+    width: 0;
+    background-color: rgba(0, 173, 236, 0.96);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.ml-ai-bar{
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    /* margin: 10px 0; */
+    overflow: hidden;
+    
+}
+.ml-ai-bar-inner{
+    height: 20px;
+    width: 0;
+    background-color: rgba(0, 173, 236, 0.96);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+.html-bar,
+.css-bar,
+.ui-ux-bar,
+.flask-bar,
+.ml-ai-bar {
+    width: 30rem;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* padding-right: 20rem; */
+    flex-direction: column;
+}
+
+.html-bar-inner,
+.css-bar-inner,
+.ui-ux-bar-inner,
+.flask-bar-inner,
+.ml-ai-bar-inner {
+    height: 20px;
+    width: 100%; /* Each bar takes up 100% width within its container */
+    background-color: rgba(0, 173, 236, 0.96);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* .html-ui-ux-bar{
+    display: flex;
+    gap: 3rem;
+    margin-top: 10rem;
+} 
+.flask-bar-ml-ai-bar{
+    display: flex;
+    gap: 3rem;
+    margin-top: 20rem;
+} */
+
+.skill-container{
+    display: flex;
+    justify-content: space-between
+}
+.html-bar-ui-ux-bar{
+    flex-basis: 10%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10rem;
+    gap: 3rem;
+}
+
+.flex-item {
+    flex-basis: 45%; 
+    margin: 5px;
+    margin-bottom: 8rem;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 3rem;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar-inner {
+    background-color: #272727;
+    border-radius: 5px;
+    height: 20px; /* Adjust height as needed */
+    position: relative;
+}
+
+/* Styles for the skill percentage */
+.skill-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+
+#contact{
+background-image: url("./images/contact.png");
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+height: 100vh;
+padding-top: 13rem;
+overflow: hidden;
+}
+
+.contact-container{
+/* text-align:center; */
+margin-left: 40rem;
+
+}
+.contact-info{
+    font-size: 2rem;
+    font-weight: 2rem;
+    color: white;
+
+}
+label{
+    font-weight: bold;
+}
+
+a{
+    cursor: pointer;
+}
+.email{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.main-image{
+    margin-top: 9rem;
+    margin-left: 1rem;
+}
+
+.github{
+border-radius: 8rem; 
+width: 3rem; 
+}
+
+.linkedin{
+border-radius: 8rem;   
+width:3rem; 
+}
+
+.instagram{
+    border-radius: 8rem;
+    width: 3rem;
+}
