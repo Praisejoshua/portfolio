@@ -1,88 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Praise Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style media="screen"></style>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Praise Joshua | Software Developer</title>
+  <meta name="description" content="Portfolio of Praise Joshua—Flask, ML, UI/UX developer from Nigeria." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="content">
-            <section id="home">
-                <ul>
-                <div class="logo">
-                    <img src="./images/me.jpeg" style="color: white; width: 5rem;height: 5rem; border-radius: 3rem;"></img>
-                </div>
-               <li><a href="#home">Home</a></li>
-               <li><a href="#skill">Skill</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <li><a href="#work">Work</a></li>
+  <!-- Page loader -->
+  <div id="loader"></div>
 
-            </ul>
-                <h1 class="name">JOSHUA PRAISE CHIEMEKA</h1>
-                <br>
-                <h3 class="sub-name">I am a Software Developer from Nigeria</h3>
-            </section>
-            <section id="skill">
-                <h2 style="color: white; margin-top: 7rem;">My <span style="color: rgb(141, 67, 89);">Skill</span></h2>
-                <!-- <h2>this is the skill page</h2> -->
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <div class="skill-bar">
-                            <div class="skill-name"><span style="color: rgb(255, 87, 51);">HTML</span> and <span style="color:#3498db;">CSS</span></div>
-                            <div class="skill-bar-inner" style="width: 75%;">
-                                <div class="skill-percentage">75%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <div class="skill-bar">
-                            <div class="skill-name"><span style="color:#008080;">UI/UX</span></div>
-                            <div class="skill-bar-inner" style="width: 80%;">
-                                <div class="skill-percentage">80%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <div class="skill-bar">
-                            <div class="skill-name"><span style="color: #007bff;">Flask</span></div>
-                            <div class="skill-bar-inner" style="width: 70%;">
-                                <div class="skill-percentage">70%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <div class="skill-bar">
-                            <div class="skill-name"><span style="color: #6f42c1;">Machine Learning and AI</span></div>
-                            <div class="skill-bar-inner" style="width: 65%;">
-                                <div class="skill-percentage">65%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <div class="contact-container">
-                    <h1 style="font-size: 3rem; font-weight: bold;">Collaborate With Me :)</h1>
-                    <br>
-                    <div class="contact-info">
-                    <p> <label for="Email">Email: </label><a class="email" href="mailto:praizjoshua263@gmail.com"><span style="color: #007bff;"> praizjoshua263@gmail.com</span></a></p>          
-                    <p> <label for=" Phone Number"> Phone Number: </label>09010846240</p>   
-                    <p><label for=" address"> Address: </label> amina court, Apo, Abuja, Nigeria.</p>
-                    </div>
-                </div>
-                <div class="main-image">
-                <a href="https://www.linkedin.com/in/praise-joshua-a5173a299/"><img class="linkedin" src="./images/linkedin.png" alt=""></a>
-                <a href="https://github.com/Praisejoshua">
-                <img class="github"src="./images/github.png" alt="">
-                <a href="https://www.instagram.com/___.praiz/"><img class="instagram" src="./images/intagram.png" alt=""></a>
-                </div>
-                </a>
-            </section>
-            <section id="work">
-                <h2>this is the portfolio page</h2>
-            </section>
-            
-    </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="./images/me.jpeg" alt="Praise Joshua" /></div>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <h1 class="name">JOSHUA PRAISE CHIEMEKA</h1>
+      <h2 class="subtitle">Software Developer from Nigeria</h2>
+      <a href="#work" class="btn">Explore My Projects</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About <span class="highlight">Me</span></h2>
+      <p>
+        I'm a passionate software developer focused on building scalable web apps
+        with Python, Flask, Django and modern web technologies. Inspired by AI, I'm
+        open to solving real-world problems with machine learning and clean UX.
+      </p>
+    </section>
+
+    <section id="skill" class="section">
+      <h2>My <span class="highlight">Skills</span></h2>
+      <div class="flex-container">
+        <div class="skill-bar">
+          <div class="skill-name">HTML & CSS</div>
+          <div class="skill-bar-inner" data-width="75%"><span class="skill-percentage">75%</span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-name">UI/UX</div>
+          <div class="skill-bar-inner" data-width="80%"><span class="skill-percentage">80%</span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-name">Flask</div>
+          <div class="skill-bar-inner" data-width="70%"><span class="skill-percentage">75%</span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-name">Machine Learning & AI</div>
+          <div class="skill-bar-inner" data-width="65%"><span class="skill-percentage">70%</span></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-name">Django</div>
+          <div class="skill-bar-inner" data-width="65%"><span class="skill-percentage">70%</span></div>
+        </div>
+      </div>
+      <h2>Tech <span class="highlight">Stack</span></h2>
+      <div class="tech-icons">
+        <img src="./images/html5.png" alt="HTML5" title="HTML5">
+        <img src="./images/css3.png" alt="CSS3" title="CSS3">
+        <img src="./images/pythonn.png" alt="Python" title="Python">
+        <img src="./images/flask.png" alt="Flask" title="Flask">
+        <img src="./images/django.png" alt="Django" title="Django">
+        <img src="./images/machine leanring.png" alt="Machine Learning" title="Machine Learning">
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <h2>My <span class="highlight">Projects</span></h2>
+      <div class="project">
+        <img src="./images/IMG-20250608-WA0023.jpg" alt="Hospital Management System">
+        <div class="project-details">
+          <h3>Hospital Management System</h3>
+          <p>Built with Django with manage the overall activaties in the hospital with an interactive chatbot</p>
+          <p><strong>Stack:</strong>Django, Bootstrap, Python, HTML/CSS, Javascript, Scikit Learn</p>
+          <a href="https://github.com/Praisejoshua/Hospital-Management-System" target="_blank">View Repo</a>
+        </div>
+      </div>
+
+        <div class="project">
+        <img src="./images/apple-touch-icon-114x114.png" alt="Sentiment Analysis Web App">
+        <div class="project-details">
+          <h3>Sentiment Analysis Web App</h3>
+          <p>Built with Flask & ML to predict sentiments.</p>
+          <p><strong>Stack:</strong> Flask, Python, HTML/CSS, Javascript, Scikit Learn</p>
+          <a href="https://github.com/Praisejoshua/Sentiment-analysis" target="_blank">View Repo</a>
+        </div>
+      </div>
+
+        <div class="project">
+        <img src="./images/bg_logo.png" alt="JoeNwaeze Limited">
+        <div class="project-details">
+          <h3>JoeNwaeze Limited Web App</h3>
+          <p>Built with Flask for an interactivte Interface.</p>
+          <p><strong>Stack:</strong> Flask, Python, HTML/CSS, Bootstrap</p>
+          <a href="https://github.com/Praisejoshua/Joenwaeze-Limited" target="_blank">View Repo</a>
+        </div>
+      </div>
+      <!-- Add more project cards similarly -->
+    </section>
+
+    <section id="timeline" class="section">
+      <h2>My <span class="highlight">Journey</span></h2>
+      <ul class="timeline">
+        <li><span class="year">2022</span><p>Started learning Flask & Python.</p></li>
+        <li><span class="year">2023</span><p>Built AI Loan Recommendation Project.</p></li>
+        <li><span class="year">2024</span><p>Interned at Shopify Max.</p></li>
+      </ul>
+    </section>
+
+    <section id="blog" class="section">
+      <h2>Blog & <span class="highlight">Writings</span></h2>
+      <p>Coming soon! Stay tuned for articles on Flask and AI.</p>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h2><span class="highlight">Testimonials</span></h2>
+      <blockquote>“Praise's ML app was spot-on — great logic & clean code.”<br><cite>— Advisor, TechCo</cite></blockquote>
+    </section>
+
+<section id="contact" class="section contact">
+  <h2>Get in <span class="highlight">Touch</span></h2>
+
+  <form action="https://formspree.io/f/xldnnvjr" method="POST">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p><strong>Download Resume:</strong>
+    <a href="./Joshua Praise – Software Engineer.docx" download class="btn">Download PDF</a>
+  </p>
+
+  <div class="social-links">
+    <a href="https://linkedin.com/in/praise-joshua-a5173a299/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://github.com/Praisejoshua" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
+    <a href="https://instagram.com/___.praiz/" target="_blank"><img src="./images/intagram.png" alt="Instagram"></a>
+  </div>
+</section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
